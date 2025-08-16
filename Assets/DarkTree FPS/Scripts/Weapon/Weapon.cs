@@ -446,7 +446,7 @@ namespace DarkTreeFPS
                         //Playing reticle animation
                         ReticleAnimation.shot = true;
 
-                        coverList.NotifyNPCAboutShot(transform.position, weaponShotNPCDetectionDistance);
+                        coverList?.NotifyNPCAboutShot(transform.position, weaponShotNPCDetectionDistance);
 
                         controller.recoil = new Vector2(Random.Range(recoil.x, recoil.x * 2), Random.Range(recoil.y, recoil.y * 2));
 
